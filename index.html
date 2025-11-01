@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Jadwal Ujian Tengah Semester Ganjil 2025 - 2026</title>
+    <style>
+        /* Reset dan tipografi */
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: 
+                radial-gradient(circle at top left, #b2d8d8, transparent),
+                radial-gradient(circle at bottom right, #94c9cc, transparent),
+                linear-gradient(to bottom, #dff3f3, #f0fafd);
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Container utama */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px 40px 50px 40px;
+            border-radius: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Ornamen sudut */
+        .ornament-top-left, .ornament-bottom-right {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            opacity: 0.15;
+            z-index: 0;
+        }
+        .ornament-top-left {
+            top: -40px;
+            left: -40px;
+            background: radial-gradient(circle, #60a0a0 30%, transparent 70%);
+            border-radius: 50%;
+        }
+        .ornament-bottom-right {
+            bottom: -40px;
+            right: -40px;
+            background: radial-gradient(circle, #559797 30%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        /* Judul */
+        h1 {
+            text-align: center;
+            margin: 0 0 5px;
+            font-weight: 900;
+            font-size: 1.6rem;
+            letter-spacing: 0.05em;
+            color: #0c4c4c;
+            position: relative;
+            z-index: 1;
+        }
+        .subtitle {
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 30px;
+            color: #3a5c5c;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Paragraf penting */
+        p.important {
+            font-weight: 600;
+            color: #155959;
+            margin-top: 5px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Tabel */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 35px;
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+        th, td {
+            border: 1px solid #0c4c4c;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #b2d8d8;
+            font-weight: 700;
+            text-align: center;
+            color: #063636;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #e5f0f0;
+        }
+        td small {
+            color: #3a5c5c;
+            font-style: italic;
+            display: block;
+        }
+
+        /* Keterangan */
+        .keterangan {
+            font-weight: 700;
+            margin-bottom: 5px;
+            color: #0b3c3c;
+            position: relative;
+            z-index: 1;
+        }
+        ol {
+            margin-top: 0;
+            margin-bottom: 35px;
+            padding-left: 20px;
+            color: #244d4d;
+        }
+        ol li {
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+        ol li strong {
+            text-decoration: underline;
+            font-weight: 800;
+        }
+
+        /* Susunan panitia */
+        .susunan {
+            margin-bottom: 40px;
+            color: #1f4d4d;
+            font-weight: 600;
+            position: relative;
+            z-index: 1;
+        }
+        .susunan ol {
+            padding-left: 20px;
+            color: #266666;
+        }
+        .susunan ol li {
+            margin-bottom: 8px;
+        }
+
+        /* Footer tanda tangan */
+        .footer {
+            text-align: right;
+            font-style: italic;
+            color: #2a5858;
+            margin-top: 60px;
+            position: relative;
+            z-index: 1;
+            font-size: 0.9rem;
+        }
+        .footer strong {
+            display: block;
+            margin-top: 50px;
+            font-weight: 900;
+            text-decoration: underline;
+            font-style: normal;
+            font-size: 1rem;
+            color: #0c4c4c;
+        }
+
+        /* Responsif - Adaptasi untuk mobile */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+            .container {
+                padding: 20px 15px 40px 15px;
+                border-radius: 10px;
+                box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+            }
+            h1 {
+                font-size: 1.3rem;
+            }
+            .subtitle {
+                font-size: 0.9rem;
+                margin-bottom: 20px;
+            }
+            p.important {
+                font-size: 0.95rem;
+            }
+            table {
+                font-size: 0.85rem;
+            }
+            /* Membuat tabel scroll horizontal pada layar kecil */
+            .table-wrapper {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            th, td {
+                white-space: nowrap;
+            }
+            .footer {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Lebih kecil untuk ponsel 400px ke bawah */
+        @media (max-width: 400px) {
+            h1 {
+                font-size: 1.1rem;
+            }
+            .subtitle, p.important {
+                font-size: 0.85rem;
+            }
+            .footer {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ornament-top-left"></div>
+        <div class="ornament-bottom-right"></div>
+
+        <h1>SEKOLAH TINGGI BAHASA ASING / STBA PONTIANAK</h1>
+        <h1>JADWAL UJIAN TENGAH SEMESTER GANJIL / MIDTEST</h1>
+        <h1>TAHUN AKADEMIK 2025 - 2026</h1>
+
+        <div class="subtitle">
+            Kelas : 2A1 - STBA / PAGI<br />
+            Program Studi: Sastra Inggris (S1)<br />
+            Kampus: Jln. Gajah Mada No. 38 Pontianak
+        </div>
+
+        <p class="important">* Pelaksanaan Midtest di mulai Senin, 3 November 2025 s/d 13 November 2025.</p>
+        <p class="important">* Perkuliahan dimulai kembali hari Senin, 17 November 2025 (setelah pelaksanaan mid semester).</p>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>HARI /<br />TANGGAL</th>
+                        <th>WAKTU</th>
+                        <th>MATA UJI</th>
+                        <th>PENGAWAS UJIAN &<br />DOSEN JAGA</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Senin, 3-11-2025</td>
+                        <td>09.00 - 10.30</td>
+                        <td>
+                            Discussion Skill<br />
+                            <small>(Kemampuan Berdiskusi)</small>
+                        </td>
+                        <td>Rafika N., S.Pd., M.Pd</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa, 4-11-2025</td>
+                        <td>09.00 - 10.30</td>
+                        <td>
+                            English Poetry<br />
+                            <small>(Puisi Bahasa Inggris)</small>
+                        </td>
+                        <td>Sistiadinita, S.Pd., M.Litt</td>
+                    </tr>
+                    <tr>
+                        <td>Rabu, 5-11-2025</td>
+                        <td>09.00 - 10.30</td>
+                        <td>
+                            Academic Reading<br />
+                            <small>(Membaca secara Akademik)</small>
+                        </td>
+                        <td>Lini Fitri, S.S., M.Pd</td>
+                    </tr>
+                    <tr>
+                        <td>Kamis, 6-11-2025</td>
+                        <td>09.00 - 10.30</td>
+                        <td>
+                            English Grammar<br />
+                            <small>(Gramatika Bhs. Inggris)</small>
+                        </td>
+                        <td>Kristina Laora, S.S., M.Pd</td>
+                    </tr>
+                    <tr>
+                        <td>Jumat, 7-11-2025</td>
+                        <td>07.30 - 09.00</td>
+                        <td>
+                            Paragraph Writing<br />
+                            <small>(Penulisan dalam paragraf)</small>
+                        </td>
+                        <td>Irma Manda N., S.Pd., M.Pd</td>
+                    </tr>
+                    <tr>
+                        <td>Sabtu, 8-11-2025</td>
+                        <td>08.00 - 09.40</td>
+                        <td>
+                            Computer III - Access<br />
+                            <small>(Komputer III - Access)</small>
+                        </td>
+                        <td>Heriyanto, S.E., M.M / Alfian S., S.E</td>
+                    </tr>
+                    <tr>
+                        <td> </td>
+                        <td>10.00 - 11.40</td>
+                        <td>Academic Listening</td>
+                        <td>Hendro Kuncoro, S.S., M.Pd</td>
+                    </tr>
+                    <tr>
+                        <td>Senin, 10-11-2025</td>
+                        <td>09.00 - 10.30</td>
+                        <td>
+                            Introduction to Translation Theory<br />
+                            <small>(Pengantar Teori Penerjemahan)</small>
+                        </td>
+                        <td>Nurul H., S.Pd., M.Pd.B.I.</td>
+                    </tr>
+                    <tr>
+                        <td>Selasa, 11-11-2025</td>
+                        <td>07.30 - 09.00</td>
+                        <td>Morphosyntax (Morfosintaksis)</td>
+                        <td>Riski Amrina S., S.Pd., M.Hum</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="keterangan"><strong>Keterangan :</strong></div>
+        <ol>
+            <li>
+                Apabila Mahasiswa <strong>TIDAK</strong> mengikuti Ujian Midtest <strong>SESUAI JADWAL</strong> tersebut diatas, maka
+                Panitia Ujian <strong>TIDAK</strong> mengadakan Midtest susulan (kecuali izin sakit mahasiswa yang disertai Surat Keterangan
+                Dokter)
+            </li>
+            <li>Peserta Ujian diharuskan hadir 15 menit <strong>SEBELUM</strong> ujian dimulai.</li>
+            <li>
+                Penguji Ujian adalah Dosen Pengasuh Mata Kuliah ybs.
+                <strong>ATAU</strong> Dosen lain yang ditunjuk Ketua Panitia Ujian (yang Kualifikasi ilmunya relevan)
+            </li>
+        </ol>
+
+        <div class="susunan">
+            <strong>SUSUNAN PANITIA UJIAN</strong>
+            <ol>
+                <li>Ketua I / Penanggung Jawab I : Juliahir Barata, S.E., M.M.</li>
+                <li>Ketua II / Penanggung Jawab II : Nonik Arigowo, S.ST.</li>
+                <li>Sekretaris Pelaksana / Penanggung Jawab III : Hasani, S.E., S.H., M.H.</li>
+                <li>Pembantu Pelaksana : W. Putri, S.E., Vitria N., A.Md., Irena Monica, S.M, Mahdiana, Nina, A.Md.</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            Pontianak, 6 Oktober 2025<br />
+            <strong>Juliahir Barata, S.E., M.M.<br />Ketua STBA Pontianak</strong>
+        </div>
+    </div>
+</body>
+</html>
